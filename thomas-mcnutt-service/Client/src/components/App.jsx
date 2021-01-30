@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   getLocation() {
-    Axios.get('http://54.183.64.62:3003/api/location')
+    Axios.get('http://54.183.64.62:80/api/location')
     // Axios.get('/api/restaurant')
       .then((result) => {
         const { data } = result;
@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   getRestaurants() {
-    Axios.get('http://54.183.64.62:3003/api/restaurant')
+    Axios.get('http://54.183.64.62:80/api/restaurant')
     // Axios.get('/api/restaurant')
       .then((result) => {
         const { data } = result;
@@ -53,7 +53,7 @@ class App extends React.Component {
   }
 
   getAttractions() {
-    Axios.get('http://54.183.64.62:3003/api/attraction')
+    Axios.get('http://54.183.64.62:80/api/attraction')
     // Axios.get('/api/attraction')
       .then((result) => {
         this.setState({
